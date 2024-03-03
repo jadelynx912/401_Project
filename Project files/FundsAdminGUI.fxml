@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FundsAdminController">
+   <children>
+      <Button id="DepositButton" fx:id="DepositButton" layoutX="132.0" layoutY="283.0" mnemonicParsing="false" onAction="#DepositFunds" text="Deposit" />
+      <Button id="WithdrawButton" fx:id="WithdrawButton" layoutX="415.0" layoutY="283.0" mnemonicParsing="false" onAction="#WithdrawFunds" text="Disburse" />
+      <TextField id="AmountDeposit" fx:id="AmountDeposit" layoutX="125.0" layoutY="220.0" prefHeight="26.0" prefWidth="150.0" />
+      <TextField id="ScholarshipNameDeposit" fx:id="ScholarshipNameDeposit" layoutX="127.0" layoutY="175.0" />
+      <TextField id="ScholarshipNameWithdraw" fx:id="ScholarshipNameWithdraw" layoutX="431.0" layoutY="175.0" />
+      <Label layoutX="6.0" layoutY="6.0" prefHeight="26.0" prefWidth="196.0" text="Funds Administrator Home">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label id="fundsLabel" fx:id="fundsLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="236.0" layoutY="76.0" prefHeight="52.0" prefWidth="139.0" text="\$0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#003363" height="40.0" layoutY="360.0" stroke="BLACK" strokeType="INSIDE" width="612.0" />
+      <Label layoutX="25.0" layoutY="179.0" text="Scholarship name:" />
+      <Label layoutX="25.0" layoutY="224.0" text="Amount (dollars):" />
+      <Label layoutX="327.0" layoutY="179.0" text="Scholarship name:" />
+      <Label layoutX="111.0" layoutY="139.0" text="Deposit Funds">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="400.0" layoutY="139.0" text="Disburse Funds">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorMsg" layoutX="447.0" layoutY="211.0" text="Scholarship not found" textFill="#f20202" visible="false" />
+   </children>
+</AnchorPane>

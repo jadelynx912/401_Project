@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="securityQuestionController">
+   <children>
+      <TextField fx:id="answer" layoutX="204.0" layoutY="187.0" prefHeight="26.0" prefWidth="192.0">
+         <font>
+            <Font name="Trebuchet MS" size="13.0" />
+         </font></TextField>
+      <Label fx:id="question" alignment="CENTER" layoutX="158.0" layoutY="143.0" prefHeight="18.0" prefWidth="283.0" text="Label">
+         <font>
+            <Font name="Trebuchet MS" size="13.0" />
+         </font></Label>
+      <Label layoutX="21.0" layoutY="55.0" text="Please answer this security question:">
+         <font>
+            <Font name="Trebuchet MS" size="13.0" />
+         </font></Label>
+      <Button fx:id="submit" layoutX="272.0" layoutY="226.0" mnemonicParsing="false" onAction="#checkAnswer" text="Submit">
+         <font>
+            <Font name="Trebuchet MS" size="13.0" />
+         </font></Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c63232" height="45.0" layoutX="7.0" layoutY="9.0" stroke="BLACK" strokeType="INSIDE" width="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label fx:id="titleLabel" layoutX="267.0" layoutY="12.0" text="Student" textFill="#0c234b">
+         <font>
+            <Font name="Trebuchet MS" size="19.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="31.0" fitWidth="180.0" layoutX="469.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="7.0">
+         <image>
+            <Image url="@../../../../Desktop/ua_horiz_rgb_4.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="40.0" layoutY="82.0" mnemonicParsing="false" onAction="#backToAccountSelect" text="Back" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="Trebuchet MS" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
