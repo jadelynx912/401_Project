@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ReviewerHomeController">
+   <children>
+      <GridPane layoutX="33.0" layoutY="64.0" prefHeight="275.0" prefWidth="543.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="110.99998779296875" minWidth="10.0" prefWidth="97.20001220703125" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="401.1999755859375" minWidth="10.0" prefWidth="355.5" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="397.4" minWidth="10.0" prefWidth="91.5" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="55.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="55.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="55.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="55.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="55.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="Name1" alignment="TOP_LEFT" prefHeight="55.0" prefWidth="95.0" text="Label" wrapText="true">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Label>
+            <Label fx:id="Desc1" alignment="TOP_LEFT" prefHeight="60.0" prefWidth="380.0" text="Label" wrapText="true" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Label>
+            <Label fx:id="Name2" alignment="TOP_LEFT" prefHeight="60.0" prefWidth="95.0" text="Label" wrapText="true" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Label>
+            <Label fx:id="Desc2" alignment="TOP_LEFT" prefHeight="56.0" prefWidth="380.0" text="Label" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Label>
+            <Label fx:id="Name3" alignment="TOP_LEFT" prefHeight="60.0" prefWidth="95.0" text="Label" wrapText="true" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Label>
+            <Label fx:id="Desc3" alignment="TOP_LEFT" prefHeight="55.0" prefWidth="380.0" text="Label" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Label>
+            <Label fx:id="Name4" alignment="TOP_LEFT" prefHeight="60.0" prefWidth="95.0" text="Label" wrapText="true" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Label>
+            <Label fx:id="Desc4" alignment="TOP_LEFT" prefHeight="56.0" prefWidth="380.0" text="Label" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Label>
+            <Label fx:id="Name5" alignment="TOP_LEFT" prefHeight="60.0" prefWidth="95.0" text="Label" wrapText="true" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Label>
+            <Label fx:id="Desc5" alignment="TOP_LEFT" prefHeight="56.0" prefWidth="380.0" text="Label" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Label>
+            <Button fx:id="apply1" mnemonicParsing="false" onAction="#apply" text="Applicants" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Button>
+            <Button fx:id="apply2" mnemonicParsing="false" onAction="#apply" text="Applicants" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Button>
+            <Button fx:id="apply3" mnemonicParsing="false" onAction="#apply" text="Applicants" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Button>
+            <Button fx:id="apply4" mnemonicParsing="false" onAction="#apply" text="Applicants" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Button>
+            <Button fx:id="apply5" mnemonicParsing="false" onAction="#apply" text="Applicants" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Button>
+         </children>
+      </GridPane>
+      <Button fx:id="nextPage" layoutX="307.0" layoutY="360.0" mnemonicParsing="false" onAction="#displayNext5" text="Next">
+         <font>
+            <Font name="Trebuchet MS" size="13.0" />
+         </font></Button>
+      <Button fx:id="prevPage" layoutX="251.0" layoutY="360.0" mnemonicParsing="false" onAction="#displayPrev5" text="Prev">
+         <font>
+            <Font name="Trebuchet MS" size="13.0" />
+         </font></Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c63232" height="45.0" layoutX="26.0" layoutY="26.0" stroke="BLACK" strokeType="INSIDE" width="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label fx:id="titleLabel" layoutX="253.0" layoutY="12.0" text="Reviewer" textFill="#0c234b">
+         <font>
+            <Font name="Trebuchet MS" size="19.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="31.0" fitWidth="180.0" layoutX="481.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="7.0">
+         <image>
+            <Image url="@../../../../Desktop/ua_horiz_rgb_4.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="34.0" layoutY="30.0" mnemonicParsing="false" onAction="#backToAccountSelect" text="Back" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="Trebuchet MS" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

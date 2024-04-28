@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ScholarshipApplicationController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1311.0" prefWidth="582.0">
+         <children>
+            <TextField fx:id="name" layoutX="227.0" layoutY="277.0" prefHeight="26.0" prefWidth="250.0" promptText="Name">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></TextField>
+            <Label layoutX="98.0" layoutY="281.0" text="Name">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Label>
+            <Label layoutX="100.0" layoutY="319.0" text="NetID">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Label>
+            <TextField fx:id="netID" editable="false" layoutX="228.0" layoutY="315.0" prefHeight="26.0" prefWidth="250.0" promptText="NetID">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></TextField>
+            <TextField fx:id="studentID" layoutX="228.0" layoutY="354.0" prefHeight="26.0" prefWidth="250.0" promptText="Student ID">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></TextField>
+            <TextField fx:id="major" layoutX="228.0" layoutY="391.0" prefHeight="26.0" prefWidth="250.0" promptText="Major(s)">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></TextField>
+            <TextField fx:id="minors" layoutX="228.0" layoutY="427.0" prefHeight="26.0" prefWidth="250.0" promptText="Minor(s)">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></TextField>
+            <Label layoutX="36.0" layoutY="395.0" text="Major and minor, if applicable">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Label>
+            <Label layoutX="88.0" layoutY="359.0" text="Student ID">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Label>
+            <Label layoutX="68.0" layoutY="469.0" text="GPA (0.0 to 4.0)">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Label>
+            <TextField fx:id="GPA" layoutX="228.0" layoutY="465.0" prefHeight="26.0" prefWidth="250.0" promptText="GPA">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></TextField>
+            <Label layoutX="47.0" layoutY="508.0" text="Expected Graduation Date">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Label>
+            <TextField fx:id="gradDate" layoutX="229.0" layoutY="503.0" prefHeight="26.0" prefWidth="250.0" promptText="Graduation Date">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></TextField>
+            <TextField fx:id="gender" layoutX="228.0" layoutY="676.0" prefHeight="26.0" prefWidth="250.0" promptText="Gender">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></TextField>
+            <Label layoutX="90.0" layoutY="680.0" text="Gender">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Label>
+            <RadioButton fx:id="yesTransfer" layoutX="226.0" layoutY="720.0" mnemonicParsing="false" onMouseClicked="#checkTransfer" text="Yes">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="noTransfer" layoutX="358.0" layoutY="720.0" mnemonicParsing="false" onMouseClicked="#checkTransfer" text="No">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></RadioButton>
+            <TextArea fx:id="financialInfo" layoutX="229.0" layoutY="756.0" prefHeight="90.0" prefWidth="325.0">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></TextArea>
+            <Label layoutX="37.0" layoutY="756.0" prefHeight="37.0" prefWidth="165.0" text="Please provide any relevant financial information" wrapText="true">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Label>
+            <Label layoutX="42.0" layoutY="720.0" text="Are you a transfer student?">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Label>
+            <TextArea fx:id="personalStatement" layoutX="229.0" layoutY="871.0" prefHeight="250.0" prefWidth="326.0">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></TextArea>
+            <Label layoutX="35.0" layoutY="871.0" prefHeight="43.0" prefWidth="151.0" text="Please provide a personal statement (up to 500 words)" wrapText="true">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Label>
+            <Button fx:id="submitButton" layoutX="275.0" layoutY="1218.0" mnemonicParsing="false" onAction="#submitForm" text="Submit">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Button>
+            <Label layoutX="78.0" layoutY="66.0" prefHeight="38.0" prefWidth="427.0" text="Please double check the following information before you submit your application:" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Label>
+            <Label fx:id="errorMessage" layoutX="27.0" layoutY="1192.0" text="Please make sure to enter name, password, netID, student ID, major, minor(s), GPA, and graduation date" textFill="RED" visible="false">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Label>
+            <TextField fx:id="classStanding" layoutX="228.0" layoutY="541.0" prefHeight="26.0" prefWidth="250.0" promptText="Class standing">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></TextField>
+            <TextField fx:id="credits" layoutX="228.0" layoutY="582.0" prefHeight="26.0" prefWidth="250.0" promptText="Number of credits">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></TextField>
+            <Label layoutX="57.0" layoutY="546.0" text="Current class standing">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Label>
+            <RadioButton fx:id="yesCitizen" layoutX="226.0" layoutY="634.0" mnemonicParsing="false" onMouseClicked="#checkCitizen" text="US Citizen">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="noCitizen" layoutX="358.0" layoutY="634.0" mnemonicParsing="false" onMouseClicked="#checkCitizen" text="Not a US citizen">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></RadioButton>
+            <Label layoutX="63.0" layoutY="634.0" text="Citizenship status">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Label>
+            <Label layoutX="38.0" layoutY="587.0" text="Credits currently enrolled in">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Label>
+            <Label fx:id="scholarshipName" alignment="TOP_CENTER" layoutX="146.0" layoutY="112.0" prefHeight="40.0" prefWidth="290.0" text="Label" wrapText="true">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Label>
+            <Label fx:id="scholarshipDesc" alignment="TOP_CENTER" layoutX="83.0" layoutY="160.0" prefHeight="117.0" prefWidth="416.0" text="Label" wrapText="true">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Label>
+            <Button fx:id="upload" layoutX="306.0" layoutY="1141.0" mnemonicParsing="false" onAction="#uploadFile" prefHeight="26.0" prefWidth="149.0" text="Upload file">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Button>
+            <Label layoutX="19.0" layoutY="1146.0" text="Please upload a pdf of your resume:">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Label>
+            <Label fx:id="filePath" alignment="CENTER" layoutX="230.0" layoutY="1167.0" prefHeight="18.0" prefWidth="301.0" visible="false">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font></Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c63232" height="45.0" stroke="BLACK" strokeType="INSIDE" width="583.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0" />
+            <Label fx:id="titleLabel" layoutX="258.0" layoutY="12.0" text="Student" textFill="#0c234b">
+               <font>
+                  <Font name="Trebuchet MS" size="19.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="31.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="7.0">
+               <image>
+                  <Image url="@../../../../Desktop/ua_horiz_rgb_4.png" />
+               </image>
+            </ImageView>
+            <Button mnemonicParsing="false" onAction="#backToAccountSelect" text="Back" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="Trebuchet MS" size="13.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>
